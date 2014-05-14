@@ -134,9 +134,6 @@ void generate(char *buf, int buflen, int nwords)
         }
         if (strcmp(w, NONWORD) == 0)
             break;
-#if 0
-        printf("%s\n", w);
-#endif
         strncat(buf, w, buflen);
         buflen -= strlen(buf);
         strncat(buf, " ", buflen);
@@ -148,7 +145,7 @@ void generate(char *buf, int buflen, int nwords)
 
 void markov_init(void)
 {
-    int i, nwords = MAXGEN;
+    int i;
     char *prefix[NPREF];
 
     for (i = 0; i < NPREF; i++)

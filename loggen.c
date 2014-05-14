@@ -136,7 +136,6 @@ void load_names_from_file(char *filename, char **names, int *names_count)
     FILE *f;
     char *line;
     int line_len;
-    int nread;
 
     if (filename == NULL || names == NULL)
         return;
