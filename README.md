@@ -7,10 +7,10 @@ The output looks like:
 {"action": "dislike", "login": "rodger", "gender": "m", "ip": "52.172.224.34", "timestamp": "1400599276"}
 {"action": "comment", "data": "Project Gutenberg's s Alice's s great t hurry.", "login": "almeda", "gender":  
  "w", "ip": "37.68.82.34", "timestamp": "1400136284"}
-    {"action": "like", "login": "charlott", "gender": "w", "ip": "153.15.26.53", "timestamp": "1399490615"}
+{"action": "like", "login": "charlott", "gender": "w", "ip": "153.15.26.53", "timestamp": "1399490615"}
 ```
 
-Each line represent an action done by an imaginary user. Action are 'buy', 'comment', 'like', 'dislike', 'post'.
+Each line represent an action done by an fake user. Action are 'buy', 'comment', 'like', 'dislike', 'post'.
 You can easily extend it by modifying the loggen.c:'action_types' array.
 An action can have data attached to it, the "data" field is generated with the help of markov chains.
 
